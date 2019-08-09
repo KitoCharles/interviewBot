@@ -1,0 +1,22 @@
+body {
+    background-image: url(createAccountBackground.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h4 {
+    padding: 5px;
+}
+
+.input-field{
+    width: 35%;
+    padding: 10px;
+}
+
+.inputs{
+    border-color: aqua;
+    background-color: aqua;
+    width: 50%;
+    border-radius: 200%;
+
+}

@@ -1,0 +1,23 @@
+/* Section 1 */
+.s1 {
+    background-color: #87CBAC;
+    background-size: cover;
+}
+.s1buttons {
+    text-align: center;
+}
+.s1 h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Section 2 */
+.s2 {
+    background-color: #90FFDC;
+    background-size: cover;
+}
+
+/* Section 3 */
+.s3 {
+    background-color: #8DE4FF;
+    background-size: cover;
+}
