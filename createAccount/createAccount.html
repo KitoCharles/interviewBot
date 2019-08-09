@@ -7,7 +7,11 @@
         <title>Create an Account</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="createAccount.css">
+        <link rel="stylesheet" href="./assets/css/createAccount.css">
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js" ></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js" ></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js" ></script>
+        <script src = "./assets/js/auth.js" defer></script>
     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -28,13 +32,13 @@
             </div>
             <!-- Email Input -->
             <div class="input-field" id="emailInput">
-                <input id="email" type="email" class="validate">
+                <input id="emailtTxt" type="email" class="validate" >
                 <label for="email">Email</label>
                 <span class="helper-text" data-error="ERROR: No '@' in email" data-success="OK">Please include an '@' in the email address.</span>
             </div>
             <!-- Password Input -->
             <div class="input-field" id="passwordInput">
-                <input id="password" type="password" class="validate">
+                <input id="passwordTxt" type="password" class="validate">
                 <label for="password">Password</label>
             </div>
             <!-- Confirm Password Input -->
@@ -43,7 +47,7 @@
                 <label for="confirmPassword">Confirm Password</label>
             </div>
             <!-- Submit Button -->
-            <button class="btn waves-effect waves-light" type="submit" name="action">Create Account
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="createBtn">Create Account
                 <i class="material-icons right"></i>
             </button>
         </section>
