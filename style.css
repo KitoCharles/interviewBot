@@ -8,6 +8,7 @@
 }
 .s1 h2 {
     font-family: 'Oswald', sans-serif;
+    padding-left: 20px
 }
 
 /* Section 2 */
@@ -21,3 +22,8 @@
     background-color: #8DE4FF;
     background-size: cover;
 }
+
+.s1 h4{
+    padding-left: 30px;
+}
+
