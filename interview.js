@@ -44,10 +44,16 @@ const interviewQuestions = {
         {
             "field":"mechanics",    
             "jobTitle":"automotiveEngineer", 
-            "question":"",           
-            "answer":"", 
+            "question":"Explain the basic difference between Bs2 And Bs3 engine.",           
+            "answer":"The basic difference of BS2 and BS3 engines is the presence of a catalytic convertor. The catalytic convertor is present in the BS3 engine which helps in reducing the formation of HC and CO. While in BS2 engine, no catalytic convertor is present which forms HC and CO. Thus in BS3 engine there is no emission of harmful CO and HC. The full form of BS is bharat stage, which is a standard of emission in India.", 
         },
-        
+       {
+            "field":"mechanics",    
+            "jobTitle":"automotiveEngineer", 
+            "question":"In a tractor, explain how the hydrostatic propulsion systems work?",           
+            "answer":"This system is based on Pascal’s law. In a tractor the pressure is same, so the force given by the liquid to the surrounding is equal to the pressure X area. Thus, obeying the Pascal’s law hydrostatic propulsion system is designed, similarly small piston feels small force and the large piston feels larger area.", 
+        },
+
     ]
 }
 
