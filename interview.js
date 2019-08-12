@@ -53,6 +53,37 @@ const interviewQuestions = {
             "question":"In a tractor, explain how the hydrostatic propulsion systems work?",           
             "answer":"This system is based on Pascal’s law. In a tractor the pressure is same, so the force given by the liquid to the surrounding is equal to the pressure X area. Thus, obeying the Pascal’s law hydrostatic propulsion system is designed, similarly small piston feels small force and the large piston feels larger area.", 
         },
+        {
+            "field":"mechanics",    
+            "jobTitle":"automotiveEngineer", 
+            "question":"How does humidity affect cooling for a radiator? A person?",           
+            "answer":"Radiator cools more efficiently during high-humidity because it does not rely on evaporative cooling. A person cools less efficiently because the body relies on evaporative cooling and when the air high a high umidity content evaporation occurs slowly.", 
+        },
+        {
+            "field":"mechanics",    
+            "jobTitle":"automotiveEngineer", 
+            "question":"Explain how you can keep your car in good condition?",           
+            "answer":"Regular check-up of parts  like the battery, tires and brakes fluid levels ( coolant, washer fluid, brake fluid, oil, power steering, etc.) fuel filters and injector belts and hose alternator lubrication of wheel bearing and ball joints", 
+        },
+        {
+            "field":"mechanics",    
+            "jobTitle":"automotiveEngineer", 
+            "question":"How often does a car requires services?",           
+            "answer":"Car requires services yearly and major maintenance at 6,000 miles.", 
+        },
+        {
+            "field":"mechanics",    
+            "jobTitle":"automotiveEngineer", 
+            "question":"Before buying a used car what things you should look for?",           
+            "answer":"Any leakage of oil underneath the car. Check any leakage of coolant water from the radiator. Check battery condition. Check whether car emits blue gray, dense smoke or a normal smoke from exhaust pipe. Watch out for engine noises, any vibrations, lack of power or any other issues. Check for any burning smells when open the hood. Check steering wheel, driver’s seat and inner door. Check tires ( Edge should not worn out, no bulge on the sidewall, no cuts, enough groves to hold the road). Check all meter work fine when you start the car", 
+        },
+        {
+            "field":"mechanics",    
+            "jobTitle":"automotiveEngineer", 
+            "question":"Explain how timing belt works?",           
+            "answer":"Timing belt rests on the crankshaft pulley and either one or two camshaft pulley; they are all align through timing belt. The closing and opening of engine valves are controlled by camshaft to let in air and fuel mixture or exhaust gas, if you do not have a timing belt or damaged timing,  it will directly affect the timing of opening and closing of engine valves. This is the reason it is called timing belt and if not in a good position, it will damage your engine.", 
+        },
+
 
     ]
 }
