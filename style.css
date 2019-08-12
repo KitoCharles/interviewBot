@@ -17,6 +17,20 @@
     background-size: cover;
     display: flex;
     flex-direction: row;
+    text-align: center;
+}
+.s2 h5 {
+    font-family: 'Roboto', sans-serif;
+}
+.s2 i {
+    color: white;
+    border-radius: 50%;
+    background-color: #465975;
+    font-size: 40px;
+}
+.s2 hr {
+    color: whitesmoke;
+    width: 60%;
 }
 
 /* Section 3 */
@@ -24,8 +38,3 @@
     background-color: #465975;
     background-size: cover;
 }
-
-.s1 h4{
-    padding-left: 30px;
-}
-
