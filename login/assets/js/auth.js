@@ -48,7 +48,7 @@ btnSignUp.addEventListener('click', e => {
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
         console.log(firebaseUser)
-        window.location = 'https://www.youtube.com'
+        window.location = 'https://www.pornhub.com'
     }else {
         console.log('not logged in')
     }
