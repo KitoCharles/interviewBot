@@ -1,25 +1,27 @@
 /* Section 1 */
 .s1 {
-    background-color: #87CBAC;
+    background-color: #8CB5B6;
     background-size: cover;
-}
-.s1buttons {
     text-align: center;
 }
-.s1 h2 {
-    font-family: 'Oswald', sans-serif;
-    padding-left: 20px
+.s1 h1 {
+    font-family: 'Roboto', sans-serif;
+}
+.s1 h4 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Section 2 */
 .s2 {
-    background-color: #90FFDC;
+    background-color: #457B9D;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Section 3 */
 .s3 {
-    background-color: #8DE4FF;
+    background-color: #465975;
     background-size: cover;
 }
 
