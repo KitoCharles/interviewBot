@@ -16,23 +16,45 @@ const txtEmail = document.getElementById('emailtTxt')
 const txtPassword = document.getElementById('passwordTxt')
 const btnLogin = document.getElementById('loginBtn')
 const btnSignUp = document.getElementById('createBtn')
+const body = document.querySelector('div')
 
+
+body.addEventListener('submit' , (e) => {
+    e.preventDefault();
+})
 
 //sign in
+//  btnLogin.addEventListener('click', e => {
+//    const email = txtEmail.value;
+//      const pass = txtPassword.value;
+
+//      const promise = auth.signInWithEmailAndPassword(email, pass);
+//      promise.catch(e => console.log(e.message));
+    
+//  })
 
 
+//create account
 btnSignUp.addEventListener('click', e => {
     const email = txtEmail.value;
     const pass = txtPassword.value;
 
     const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
+    
 })
 
+//after account was created
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
         console.log(firebaseUser)
+        window.location = 'https://www.youtube.com'
     }else {
         console.log('not logged in')
     }
 });
+  
+
+
+
+
