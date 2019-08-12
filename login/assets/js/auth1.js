@@ -24,31 +24,31 @@ body.addEventListener('submit' , (e) => {
 })
 
 //sign in
-//  btnLogin.addEventListener('click', e => {
-//    const email = txtEmail.value;
-//      const pass = txtPassword.value;
+ btnLogin.addEventListener('click', e => {
+   const email = txtEmail.value;
+     const pass = txtPassword.value;
 
-//      const promise = auth.signInWithEmailAndPassword(email, pass);
-//      promise.catch(e => console.log(e.message));
+     const promise = auth.signInWithEmailAndPassword(email, pass);
+     promise.catch(e => console.log(e.message));
     
-//  })
+ })
 
 
 //create account
-btnSignUp.addEventListener('click', e => {
-    const email = txtEmail.value;
-    const pass = txtPassword.value;
+// btnSignUp.addEventListener('click', e => {
+//     const email = txtEmail.value;
+//     const pass = txtPassword.value;
 
-    const promise = auth.createUserWithEmailAndPassword(email, pass);
-    promise.catch(e => console.log(e.message));
+//     const promise = auth.createUserWithEmailAndPassword(email, pass);
+//     promise.catch(e => console.log(e.message));
     
-})
+// })
 
 //after account was created
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
         console.log(firebaseUser)
-        window.location = '.\login\login.html'
+        window.location = "https://youtube.com"
     }else {
         console.log('not logged in')
     }
