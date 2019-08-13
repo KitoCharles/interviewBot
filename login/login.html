@@ -17,44 +17,43 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
     <body>
-        <section class="createAccountForm container">
-            <h4>Log In</h4>
-            <!-- First Name Input -->
-            <!-- <div class="input-field" id="firstNameInput">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-                <span class="helper-text">This will be your username.</span>
-            </div> -->
-            <!-- Last Name Input -->
-            <!-- <div class="input-field" id="lastNameInput">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-            </div> -->
-            <!-- Email Input -->
-            <div class="input-field" id="emailInput">
-                <input id="emailtTxt" type="email" class="validate" >
-                <label for="email">Email</label>
-                <span class="helper-text" data-error="ERROR: No '@' in email" data-success="OK">Please include an '@' in the email address.</span>
-            </div>
-            <!-- Password Input -->
-            <div class="input-field" id="passwordInput">
-                <input id="passwordTxt" type="password" class="validate">
-                <label for="password">Password</label>
-            </div>
-            <!-- Confirm Password Input -->
-            <!-- <div class="input-field" id="confirmPasswordInput">
-                <input id="confirmPassword" type="password" class="validate">
-                <label for="confirmPassword">Confirm Password</label>
-            </div> -->
-            <!-- Submit Button -->
-            <!-- <button class="btn waves-effect waves-light" type="submit" name="action" id="createBtn">Create Account
-                <i class="material-icons right"></i>
-            </button> -->
-            <!-- login button -->
-			<button class="btn waves-effect waves-light" type="submit" name="action" id="loginBtn">login
-                    <i class="material-icons right"></i>
-            </button>
-        </section>
+        <div class="login-div">
 
+            <!-- interviewBot Logo -->
+            <div class="row">
+                <div class="logo"></div>
+            </div>
+
+            <!-- Login Form Title -->
+            <div class="row center-align">
+                <h5>Log In</h5>
+                <h6>Use your interviewBot Account</h6>
+            </div>
+
+            <!-- Email Input -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email_input" type="email" class="validate">
+                    <label for="email_input">Email</label>
+                </div>
+            </div>
+            
+            <!-- Password Input -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password_input" type="password" class="validate">
+                    <label for="password_input">Password</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">Don't have an account? <a href=".\createAccount\createAccount.html">Click here</a> to create an account.</div>
+            </div>
+
+            <!-- Log In Button -->
+            <div class="row">
+                <div class="col s12 right-align"><a class="waves-effect waves-light btn">Log in</a></div>
+            </div>
+        </div>
     </body>
 </html>
