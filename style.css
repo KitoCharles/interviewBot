@@ -1,3 +1,14 @@
+/* Navbar */
+#nav {
+    width: 100%;
+    height: 75px;
+    top: 0px;
+    position: absolute;
+    z-index: 999;
+    background-color: rgb(47,49,62);
+    opacity: 0.8;
+}
+
 /* Section 1 */
 .s1 {
     background-color: #8CB5B6;
@@ -6,6 +17,7 @@
 }
 .s1 h1 {
     font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 .s1 h4 {
     font-family: 'Montserrat', sans-serif;
