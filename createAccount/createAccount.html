@@ -5,55 +5,65 @@
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>Create an Account</title>
+
+        <!-- fonts -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/css/createAccount.css">
-        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js" ></script>
-        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js" ></script>
-        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js" ></script>
+
+        <!-- firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js" defer></script>
+        
+        <!-- css & js -->
         <script src = "./assets/js/auth.js" defer></script>
-    
+        <link rel="stylesheet" href="./assets/css/createAccount.css">
+        
+        <!-- materialize -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
     </head>
     <body>
         <section class="createAccountForm container">
             <h4>Create an Account</h4>
             <!-- First Name Input -->
-            <div class="input-field" id="firstNameInput">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-                <span class="helper-text">This will be your username.</span>
-            </div>
-            <!-- Last Name Input -->
-            <div class="input-field" id="lastNameInput">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-            </div>
-            <!-- Email Input -->
-            <div class="input-field" id="emailInput">
-                <input id="emailtTxt" type="email" class="validate" >
-                <label for="email">Email</label>
-                <span class="helper-text" data-error="ERROR: No '@' in email" data-success="OK">Please include an '@' in the email address.</span>
-            </div>
-            <!-- Password Input -->
-            <div class="input-field" id="passwordInput">
-                <input id="passwordTxt" type="password" class="validate">
-                <label for="password">Password</label>
-            </div>
-            <!-- Confirm Password Input -->
-            <div class="input-field" id="confirmPasswordInput">
-                <input id="confirmPassword" type="password" class="validate">
-                <label for="confirmPassword">Confirm Password</label>
-            </div>
-            <!-- Submit Button -->
-            <button class="btn waves-effect waves-light" type="submit" name="action" id="createBtn">Create Account
-                <i class="material-icons right"></i>
-            </button>
-            <!-- login button -->
-			<!-- <button class="btn waves-effect waves-light" type="submit" name="action" id="loginBtn">login
+            <form id="signup-form">
+                <div class="input-field" id="firstNameInput" >
+                    <input id="first_name" type="text" name class="validate" required="" aria-required="true">
+                    <label for="first_name">First Name</label>
+                    <span class="helper-text">This will be your username.</span>
+                </div>
+                <!-- Last Name Input -->
+                <div class="input-field" id="lastNameInput" >
+                    <input id="last_name" type="text" class="validate" required="" aria-required="true">
+                    <label for="last_name">Last Name</label>
+                </div>
+                <!-- Email Input -->
+                <div class="input-field" id="emailInput" >
+                    <input id="emailtTxt" type="email" class="validate" required="" aria-required="true">
+                    <label for="email">Email</label>
+                    <span class="helper-text" data-error="ERROR: No '@' in email" data-success="OK">Please include an '@' in the email address.</span>
+                </div>
+                <!-- Password Input -->
+                <div class="input-field" id="passwordInput" > 
+                    <input id="passwordTxt" name="passwordTxt" type="password" class="validate"  required="" aria-required="true" minlength=6>
+                    <label for="password" data-error="Must be 6 characters long">Password</label>
+                </div>
+                <!-- Confirm Password Input -->
+                <div class="input-field" id="confirmPasswordInput">
+                    <input id="confirmPassword" name="confirmPassword" type="password" class="validate" required="" aria-required="true" >
+                    <label   for="confirmPassword" data-error="Password not match" data-success="Password Match">Password (Confirm)</label>
+                </div>
+                <!-- Submit Button -->
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="createBtn">Create Account
                     <i class="material-icons right"></i>
-            </button> -->
+                </button>
+                <!-- login button -->
+                <!-- <button class="btn waves-effect waves-light" type="submit" name="action" id="loginBtn">login
+                        <i class="material-icons right"></i>
+                </button> -->
+            </form>
         </section>
 
     </body>
