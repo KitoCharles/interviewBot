@@ -9,49 +9,58 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  //Gain Access to firebase
   const auth = firebase.auth();
+  const db = firebase.firestore();
 
 //get elements
 const txtEmail = document.getElementById('emailtTxt')
+const firstName = document.getElementById('first_name')
+const lastName = document.getElementById('last_name')
 const txtPassword = document.getElementById('passwordTxt')
-const btnLogin = document.getElementById('loginBtn')
 const btnSignUp = document.getElementById('createBtn')
-const body = document.querySelector('div')
-
-
-body.addEventListener('submit' , (e) => {
-    e.preventDefault();
-})
-
-//sign in
-//  btnLogin.addEventListener('click', e => {
-//    const email = txtEmail.value;
-//      const pass = txtPassword.value;
-
-//      const promise = auth.signInWithEmailAndPassword(email, pass);
-//      promise.catch(e => console.log(e.message));
-    
-//  })
+const signupForm = document.querySelector("#signup-form")
 
 
 //create account
-btnSignUp.addEventListener('click', e => {
+signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    //get user info
     const email = txtEmail.value;
     const pass = txtPassword.value;
 
-    const promise = auth.createUserWithEmailAndPassword(email, pass);
-    promise.catch(e => console.log(e.message));
+    //sign uo the user
+    auth.createUserWithEmailAndPassword(email, pass).then(cred => {
+        return db.collection('users').doc(cred.user.uid).set({
+            displayName: (firstName.value + " " + lastName.value)
+        });
+        // 
+        // after creating account i want to have the user go back to homepage to login.
+        // 
+    })
     
 })
 
-//after account was created
-firebase.auth().onAuthStateChanged(firebaseUser => {
-    if(firebaseUser){
-        console.log(firebaseUser)
-    }else {
-        console.log('not logged in')
-    }
-});
+//confirm passwords script
+const password = document.getElementById('passwordTxt')
+const confirm_password = document.getElementById('confirmPassword');
+	function validatePassword() {
+		if (password.value != confirm_password.value) {
+			confirm_password.setCustomValidity('Passwords Don\'t Match');
+		} else {
+			confirm_password.setCustomValidity('');
+		}
+	}
+	password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+    
+
+
+            
+
+
   
 
 
