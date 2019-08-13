@@ -1,3 +1,10 @@
+$(document).ready(function(){
+    $('.modal').modal();
+});
+
+
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyDzdK2IW_uY-JTPCZ-ELAFGx8IOOYdVANM",
     authDomain: "interviewbot-f6587.firebaseapp.com",
@@ -15,12 +22,11 @@ var firebaseConfig = {
   const db = firebase.firestore();
 
 //get elements
-const txtEmail = document.getElementById('emailtTxt')
-const firstName = document.getElementById('first_name')
-const lastName = document.getElementById('last_name')
-const txtPassword = document.getElementById('passwordTxt')
-const btnSignUp = document.getElementById('createBtn')
-const signupForm = document.querySelector("#signup-form")
+const txtEmail = document.getElementById('email_input')
+const firstName = document.getElementById('firstName_input')
+const lastName = document.getElementById('lastName_input')
+const txtPassword = document.getElementById('password_input')
+const signupForm = document.querySelector("#signUp-form")
 
 
 //create account
@@ -39,30 +45,23 @@ signupForm.addEventListener('submit', (e) => {
         // 
         // after creating account i want to have the user go back to homepage to login.
         // 
+    }).then(() => {
+        const modal = document.querySelector("#modal1");
+        M.Modal.getInstance(modal).open();
+        signupForm.reset();
     })
     
 })
 
 //confirm passwords script
-const password = document.getElementById('passwordTxt')
-const confirm_password = document.getElementById('confirmPassword');
-	function validatePassword() {
-		if (password.value != confirm_password.value) {
-			confirm_password.setCustomValidity('Passwords Don\'t Match');
-		} else {
-			confirm_password.setCustomValidity('');
-		}
-	}
-	password.onchange = validatePassword;
-    confirm_password.onkeyup = validatePassword;
+// const confirm_password = document.getElementById('confirmPassword');
+// 	function validatePassword() {
+// 		if (txtPassword.value != confirm_password.value) {
+// 			confirm_password.setCustomValidity('Passwords Don\'t Match');
+// 		} else {
+// 			confirm_password.setCustomValidity('');
+// 		}
+// 	}
+// 	txtPassword.onchange = validatePassword;
+//     confirm_password.onkeyup = validatePassword;
     
-
-
-            
-
-
-  
-
-
-
-

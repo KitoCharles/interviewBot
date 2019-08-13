@@ -15,8 +15,8 @@ var firebaseConfig = {
   const db = firebase.firestore();
 
 //get elements
-const txtEmail = document.getElementById('emailtTxt')
-const txtPassword = document.getElementById('passwordTxt')
+const txtEmail = document.getElementById('email_input')
+const txtPassword = document.getElementById('password_input')
 const loginForm = document.querySelector('#signin-form')
 const logoutForm = document.querySelector('#signOutBtn')
 
@@ -38,15 +38,15 @@ const logoutForm = document.querySelector('#signOutBtn')
 
 //sign out
 
-logoutForm.addEventListener('click', (e) => {
-  e.preventDefault();
+// logoutForm.addEventListener('click', (e) => {
+//   e.preventDefault();
 
 
-  auth.signOut()
+//   auth.signOut()
     
   
 
-});
+// });
 
 
 

@@ -4,56 +4,64 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title>Log In</title>
+        <title>login to account</title>
+
+        <!-- fonts -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- firebase -->
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js" defer></script>
+        
+        <!-- css & js -->
+        <script src = "./assets/js/auth.js" defer></script>
         <link rel="stylesheet" href="./assets/css/login.css">
-        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js" ></script>
-        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js" ></script>
-        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js" ></script>
-        <script src = "./assets/js/auth1.js" defer></script>
-    
+        
+        <!-- materialize -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
     <body>
         <div class="login-div">
-
+            <form id="signin-form">
             <!-- interviewBot Logo -->
-            <div class="row">
-                <div class="logo"></div>
-            </div>
+                <div class="row">
+                    <div class="logo"></div>
+                </div>
 
             <!-- Login Form Title -->
-            <div class="row center-align">
-                <h5>Log In</h5>
-                <h6>Use your interviewBot Account.</h6>
-            </div>
+                <div class="row center-align">
+                    <h5>Log In</h5>
+                    <h6>Use your interviewBot Account</h6>
+                </div>
 
             <!-- Email Input -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="email_input" type="email" class="validate">
-                    <label for="email_input">Email</label>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email_input" type="email" class="validate">
+                        <label for="email_input">Email</label>
+                    </div>
                 </div>
-            </div>
             
             <!-- Password Input -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password_input" type="password" class="validate">
-                    <label for="password_input">Password</label>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password_input" type="password" class="validate">
+                        <label for="password_input">Password</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col s12">Don't have an account? <a href="..\createAccount\createAccount.html">Click here</a> to create an account.</div>
-            </div>
+               <div class="row">
+                    <div class="col s12">Don't have an account? <a href="..\createAccount\createAccount.html">Click here</a> to create an account.</div>
+                </div>
 
             <!-- Log In Button -->
-            <div class="row">
-                <div class="col s12 right-align"><a class="waves-effect waves-light btn">Log in</a></div>
-            </div>
+                <div class="row">
+                    <div class="col s12 right-align"><button class="waves-effect waves-light btn" type="submit">Log in</button></div>
+                </div>
+            </form>
         </div>
     </body>
 </html>
