@@ -6,10 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>Create an Account</title>
 
-        <!-- fonts -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
         <!-- firebase -->
         <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js" defer></script>
         <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js" defer></script>
@@ -25,6 +21,51 @@
         
     </head>
     <body>
-        
+        <div class="signUp-div">
+
+            <!-- Sign Up Form Title -->
+            <div class="row center-align">
+                <h5>Sign Up</h5>
+                <h6>Create an interviewBot Account.</h6>
+            </div>
+
+            <!-- First Name & Last Name -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="firstName_input" type="text" class="validate">
+                    <label for="firstName_input">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="lastName_input" type="text" class="validate">
+                    <label for="lastName_input">Last Name</label>
+                </div>
+            </div>
+
+            <!-- Email Input -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email_input" type="email" class="validate">
+                    <label for="email_input">Email</label>
+                    <span class="helper-text" data-error="Email must include '@'" data-success="right"></span>
+                </div>
+            </div>
+            
+            <!-- Password Input -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password_input" type="password" class="validate">
+                    <label for="password_input">Password</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">Already have an interviewBot account? <a href="..\login\login.html">Click here</a> to login.</div>
+            </div>
+
+            <!-- Create Account Button -->
+            <div class="row">
+                <div class="col s12 right-align"><a class="waves-effect waves-light btn">Create Account</a></div>
+            </div>
+        </div>
     </body>
 </html>
