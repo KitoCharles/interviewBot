@@ -1,0 +1,35 @@
+[debug] [2019-08-14T13:05:00.751Z] ----------------------------------------------------------------------
+[debug] [2019-08-14T13:05:00.754Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-14T13:05:00.754Z] CLI Version:   7.2.2
+[debug] [2019-08-14T13:05:00.754Z] Platform:      win32
+[debug] [2019-08-14T13:05:00.754Z] Node Version:  v12.4.0
+[debug] [2019-08-14T13:05:00.755Z] Time:          Wed Aug 14 2019 09:05:00 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-08-14T13:05:00.755Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-14T13:05:00.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-14T13:05:00.765Z] > authorizing via signed-in user
+[debug] [2019-08-14T13:05:00.765Z] [iam] checking project interviewbot-f6587 for permissions ["firebase.projects.get"]
+[debug] [2019-08-14T13:05:00.766Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/interviewbot-f6587:testIamPermissions  
+
+[debug] [2019-08-14T13:05:02.740Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-14T13:05:02.748Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/interviewbot-f6587  
+ 
+[debug] [2019-08-14T13:05:03.143Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Admin\Documents\interviewBot\web-start'...
+[info] 
+[debug] [2019-08-14T13:05:03.161Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/interviewbot-f6587/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-08-14T13:05:03.181Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/interviewbot-f6587/adminSdkConfig  
+ 
+[debug] [2019-08-14T13:05:03.572Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-14T13:05:03.584Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./public
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Admin\Documents\interviewBot\web-start\functions" for Cloud Functions...
+[debug] [2019-08-14T13:05:04.301Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Admin\\Documents\\interviewBot\\web-start\\functions","node_version":"12.4.0"}
+[debug] [2019-08-14T13:05:04.301Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
