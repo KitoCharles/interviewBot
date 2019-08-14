@@ -5,11 +5,10 @@
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>interviewBot</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
+        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- BootStrap -->
         <link rel="stylesheet" href="style.css">
 
         <!-- Google Fonts -->
@@ -17,117 +16,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Signed-In Navbar -->
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <!-- Website Name (interviewBot) -->
-                    <ul class="left">
-                        <li>
-                            <h5>interviewBot</h5>
-                        </li>
-                    </ul>
-
-                    <!-- Search Bar -->
-                    <form action="" method="post">
-                        <div class="input-field">
-                            <input id="search" type="search" name="search">
-                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                            <i class="material-icons">close</i>
-                        </div>
-                    </form>
-                    <ul class="right">
-                        <!-- Displays Username -->
-                        <li>
-                            <a>
-                                username test
-                            </a>
-                        </li>
-                        <!-- User Profile Image -->
-                        <li class="imgProfil">
-                            <img src="http://maxpixel.freegreatpicture.com/static/photo/1x/Redhead-Girl-Person-People-Woman-Female-Avatar-995164.png" alt="" class="circle">
-                        </li>
-                            <ul id="AccountInfo" class="hidden z-depth-5">
-                                <li>sdfsdf</li>
-                                <li>fghfgh</li>
-                                <li>jkjkljkljkl</li>
-                                <li>xwcxwcwxcwxc</li>
-                            </ul>
-                        <li>
-                            <a href="">
-                                <i class="material-icons">exit_to_app</i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- Fixed Navbar
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo center">interviewBot</a>
-                    <form>
-                        <div class="input-field">
-                            <input id="search" type="search" required>
-                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                            <i class="material-icons">close</i>
-                        </div>
-                    </form>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#">Sass</a></li>
-                        <li><a href="#">Components</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div> -->
-
-        <div id="fullpage">
-            <div class="section s1">
-                <!-- Header -->
-                <section class="section1">
-                    <h1>interviewBot</h1>
-                    <h4>Here to help.</h4>
-                    <div class="s1buttons container">
-                        <a class="waves-effect waves-light btn-large" href=".\createAccount\createAccount.html">Create an Account</a>
-                        <a class="waves-effect waves-light btn-large" href=".\login\login.html">Log In</a>
-                    </div>
-                </section>
-            </div>
-            <div class="section s2">
-                <section class="aboutInterviewBot">
-                    <div class="about1">
-                        <i class="fas fa-robot"></i>
-                        <h5>Let interviewBot prepare you for future interviews!</h5>
-                        <h5>Say "goodbye!" to interview anxiety.</h5>
-                        <a class="waves-effect waves-light btn-small" href=".\createAccount\createAccount.html">Sign Up</a>
-                    </div>
-
-                    <hr>
-                    
-                    <div class="about2">
-                        <i class="fas fa-check"></i>
-                        <h5>With over 650 occupations listed, you are guaranteed to find interview questions for your future job!</h5>
-                        <h5>Search now for any occupation.</h5>
-                    </div>
-
-                    <hr>
-                    
-                    <div class="about3">
-                        <i class="fas fa-user-plus"></i>
-                        <h5>Become a premium member today</h5>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
-
-        <script>
-            new fullpage('#fullpage', {
-                scrollHorizontally: true,
-            })
-        </script>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
