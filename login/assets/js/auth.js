@@ -31,8 +31,11 @@ const logoutForm = document.querySelector('#signOutBtn')
     const pass = txtPassword.value;
 
     auth.signInWithEmailAndPassword(email, pass).then(cred => {
-      console.log(cred.user)
-    });
+      loginForm.reset();
+
+    }).catch(err => {
+      loginForm.querySelector('.error').innerHTML = err.message;
+    })
 
  });
 
