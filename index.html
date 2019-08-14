@@ -17,7 +17,72 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="navbar"></div>
+        <!-- Signed-In Navbar -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <!-- Website Name (interviewBot) -->
+                    <ul class="left">
+                        <li>
+                            <h5>interviewBot</h5>
+                        </li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <form action="" method="post">
+                        <div class="input-field">
+                            <input id="search" type="search" name="search">
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                    <ul class="right">
+                        <!-- Displays Username -->
+                        <li>
+                            <a>
+                                username test
+                            </a>
+                        </li>
+                        <!-- User Profile Image -->
+                        <li class="imgProfil">
+                            <img src="http://maxpixel.freegreatpicture.com/static/photo/1x/Redhead-Girl-Person-People-Woman-Female-Avatar-995164.png" alt="" class="circle">
+                        </li>
+                            <ul id="AccountInfo" class="hidden z-depth-5">
+                                <li>sdfsdf</li>
+                                <li>fghfgh</li>
+                                <li>jkjkljkljkl</li>
+                                <li>xwcxwcwxcwxc</li>
+                            </ul>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">exit_to_app</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Fixed Navbar
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo center">interviewBot</a>
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Sass</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> -->
+
         <div id="fullpage">
             <div class="section s1">
                 <!-- Header -->
@@ -62,7 +127,6 @@
         <script>
             new fullpage('#fullpage', {
                 scrollHorizontally: true,
-                navigation: true,
             })
         </script>
     </body>
