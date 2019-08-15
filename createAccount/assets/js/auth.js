@@ -41,15 +41,15 @@ signupForm.addEventListener('submit', (e) => {
     auth.createUserWithEmailAndPassword(email, pass).then(cred => {
         return db.collection('users').doc(cred.user.uid).set({
             displayName: (firstName.value + " " + lastName.value)
-        });
-        // 
-        // after creating account i want to have the user go back to homepage to login.
-        // 
+        })
     }).then(() => {
         const modal = document.querySelector("#modal1");
         M.Modal.getInstance(modal).open();
         signupForm.reset();
-    })
+        signupForm.querySelector('.error').innerHTML = " ";
+    }).catch(err => {
+        signupForm.querySelector('.error').innerHTML = err.message;
+      })
     
 })
 

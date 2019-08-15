@@ -51,6 +51,13 @@ const interviewQuestions = {
             "field": "engineer",
             "jobTitle": "Automotive Engineer",
             "jobDescription":"Automotive engineering is a branch of vehicle engineering, incorporating elements of mechanical, electrical, electronic, software, and safety engineering as applied to the design, manufacture and operation of motorcycles, automobiles, and trucks and their respective engineering subsystems. It also includes modification of vehicles and manufacturing domain deals with the creation and assembling the whole parts of automobiles is also included in it.",
+            "question": "In a tractor, explain how the hydrostatic propulsion systems work?",
+            "answer": "This system is based on Pascal’s law. In a tractor the pressure is same, so the force given by the liquid to the surrounding is equal to the pressure X area. Thus, obeying the Pascal’s law hydrostatic propulsion system is designed, similarly small piston feels small force and the large piston feels larger area.",
+        },
+        {
+            "field": "engineer",
+            "jobTitle": "Automotive Engineer",
+            "jobDescription":"Automotive engineering is a branch of vehicle engineering, incorporating elements of mechanical, electrical, electronic, software, and safety engineering as applied to the design, manufacture and operation of motorcycles, automobiles, and trucks and their respective engineering subsystems. It also includes modification of vehicles and manufacturing domain deals with the creation and assembling the whole parts of automobiles is also included in it.",
             "question": "How does humidity affect cooling for a radiator? A person?",
             "answer": "Radiator cools more efficiently during high-humidity because it does not rely on evaporative cooling. A person cools less efficiently because the body relies on evaporative cooling and when the air high a high umidity content evaporation occurs slowly.",
         },
