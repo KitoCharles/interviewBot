@@ -59,7 +59,7 @@ const logoutForm = document.querySelector('#signOutBtn')
 firebase.auth().onAuthStateChanged(firebaseUser => {
   if(firebaseUser){ 
       console.log("logged in")
-      window.location.replace("file:///C:\\Users\\Admin\\Desktop\\interviewBot-master\\interviewBot\\chatBot\\chatBot.html","mywindow");
+      window.location.replace("file:///C:\\Users\\Admin\\Desktop\\final\\interviewBot\\chatBot\\chatBot.html","mywindow");
   }else {
       console.log('not logged in')
   }

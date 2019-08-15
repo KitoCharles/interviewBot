@@ -1,3 +1,20 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyDzdK2IW_uY-JTPCZ-ELAFGx8IOOYdVANM",
+    authDomain: "interviewbot-f6587.firebaseapp.com",
+    databaseURL: "https://interviewbot-f6587.firebaseio.com",
+    projectId: "interviewbot-f6587",
+    storageBucket: "interviewbot-f6587.appspot.com",
+    messagingSenderId: "323622453220",
+    appId: "1:323622453220:web:f20d41d9e3201076"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  //Gain Access to firebase
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+// chatbot 
 let chat = document.querySelector("input1");
 
 $("#submit").click(function(){
@@ -105,3 +122,14 @@ function botMessage(bm){
         "text": "interviewBot"
     }).appendTo(messageWrapper);
 }
+let logout = document.querySelector("a")
+logout.addEventListener('click', (e) => {
+       e.preventDefault();
+        console.log("user Signed out")
+    
+       auth.signOut()
+
+        
+      
+    
+     });
