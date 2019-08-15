@@ -1,22 +1,58 @@
 let chat = document.querySelector("input1");
 
-
 $("#submit").click(function(){
     let userInput = $("#chat").val().toLowerCase();
-    let questions = interviewQuestions.questions;
-    let question  =  questions[5];
+  
     $("#chat").val("")
+    let lastQuestion= false;
     if(userInput == "yes"){
         youMessage(userInput);
-        botMessage("Type in an occupation number to practice. 1: Automotive Engineer. 2: Plumber. 3: Software Engineer");
+        botMessage("Okay, starting the interview for Software Engineer. Which question would you like to practice?");
+        botMessage("Type '1' to practice the question: What is the average salary for a software engineer?");
+        botMessage("Type '2' to practice the question: What is the programming language of the web?");
+        botMessage("Type '3' to practice the question: What year was the programming language, Javascript, created?");
     }
     else if(userInput == 1){
-        botMessage(question.question)
+        youMessage(userInput);
+        let questions = interviewQuestions.questions;
+        let question  =  questions[userInput -1];
+        botMessage(question.question);
+        lastQuestion  = true;
+
+    }
+    else if(userInput == 2){
+        youMessage(userInput);
+        let questions = interviewQuestions.questions;
+        let question  =  questions[userInput - 1];
+        botMessage(question.question);
+        lastQuestion  = true;
+
+    }
+    else if(userInput == 3){
+        youMessage(userInput);
+        let questions = interviewQuestions.questions;
+        let question  =  questions[userInput -1 ];
+        botMessage(question.question);
+        lastQuestion  = true;
+    }
+    else if(userInput == 1995){
+        youMessage(userInput);
+        botMessage("You're correct!")
+    }
+    else if(userInput == "107195"){
+        youMessage(userInput);
+        botMessage("You're correct!")
+    }
+    else if(userInput.toLowerCase() == "javascript"){
+        youMessage(userInput);
+        botMessage("You're correct!")
     }
     else{
-        console.log(question.answer);
-        console.log(userInput);
-        checkValidity(userInput, question.answer.toLowerCase());
+        youMessage(userInput);
+
+        botMessage("You are wrong.")
+
+
     }
 })
 

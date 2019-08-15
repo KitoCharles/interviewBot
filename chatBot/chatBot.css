@@ -51,7 +51,7 @@ body {
     z-index: 1;
 }
 #search-container input{
-    color: #eee;
+    color: rgb(68,71,83);
     outline: none;
     border-radius: 2px;
     height: 30px;
@@ -180,7 +180,7 @@ body {
 
 #chat-form {
     display: grid;
-    grid: 51px / 32px 1 fr;
+    grid: 51px / 32px 1fr;
     align-content: center;
     align-items: center;
     grid-gap: 15px;
@@ -197,6 +197,9 @@ body {
     color: rgb(68,71,83);
     border-radius: 6px;
     font-size: 1.4rem;
+}
+#chat-form button {
+    size: 50px 50px;
 }
 
 ::-webkit-scrollbar {
