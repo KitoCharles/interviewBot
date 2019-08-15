@@ -19,13 +19,13 @@ const txtEmail = document.getElementById('email_input')
 const txtPassword = document.getElementById('password_input')
 const loginForm = document.querySelector('#signin-form')
 const logoutForm = document.querySelector('#signOutBtn')
-const loginBtn = document.getElementById('nono')
+
 
 
 
 
 //sign in
- loginBtn.addEventListener('click', (e) => {
+ loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const email = txtEmail.value;
