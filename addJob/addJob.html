@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Add an Occupation</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- firebase -->
+        
+        <!-- css & js -->
+        <link rel="stylesheet" href="addJob.css">
+        
+        <!-- jquery -->
+
+        <!-- materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        
+    </head>
+    <body>
+        <div class="addJob-div">
+            <form id="addJob-form">
+                <!-- Add Job Form Title -->
+                <div class="row center-align">
+                    <h5>Add an Occupation</h5>
+                    <h6>Can't find a job to practice on? Fill out the form below to request an occupation to be added.</h6>
+                </div>
+                <div class="row">
+                    <div class="col s12">Already have an interviewBot account? <a href="..\login\login.html">Click here</a> to login.</div>
+                </div>
+
+                <!-- Job Name -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="jobName_input" type="text" class="validate" required="" aria-required="true">
+                        <label for="jobName_input">Job Name</label>
+                    </div>
+                </div>
+
+                <!-- Job Description -->
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                <label for="icon_prefix2">Job Description</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            
+                <!-- Password Input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password_input" type="text" class="validate" required="" aria-required="true">
+                        <label for="password_input">Password</label>
+                    </div>
+                </div>
+
+                <!-- Create Account Button -->
+                <div class="row">
+                    <div class="col s12 right-align"><button class="waves-effect waves-light btn" type="submit">Create Account</button></div>
+                </div>
+            </form>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4 id="modalText">Account Successfully Created!</h4>
+                <a class="btn waves-effect waves-light" class="material-icons right" id="goToLogin" href="..\login\login.html">Login</a>
+            </div>
+        </div>
+    </body>
+</html>

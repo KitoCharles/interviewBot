@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>chatBot</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="chatBot.css">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="interview.js" defer></script>
+        <script src="chatBot.js" defer></script>
+
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="chat-container">
+            <!-- Search Bar -->
+            <div id="search-container">
+                <input type="text"  id="searchbar" placeholder="Search for an occupation">
+            </div>
+
+            <!-- List of Jobs -->
+            <div id="occupation-list">
+
+                <div class="occupation">
+                    <div class="title-text">
+                        Automotive Engineer
+                    </div>
+                    <div class="difficulty-level">
+                        Intermediate
+                    </div>
+                </div>
+
+                <div class="occupation">
+                    <div class="title-text">
+                        Plumber
+                    </div>
+                    <div class="difficulty-level">
+                        Basic
+                    </div>
+                </div>
+            
+                <div class="occupation">
+                    <div class="title-text">
+                        Software Engineer
+                    </div>
+                    <div class="difficulty-level">
+                        Basic
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Add a Job -->
+            <div id="new-occupation-container">
+                <a href="#">+</a>
+            </div>
+
+            <div id="chat-title">
+                <span>interviewBot</span>
+            </div>
+
+            <div id="chat-message-list">
+                <div class="message-row interviewBot-message">
+                    <div class="message-text">Hello, I'm interviewBot! Are you ready to start the interview? Type "Yes" to start the interview.</div>
+                    <div class="name-display">interviewBot</div>    
+                </div>
+                <!-- <div class="message-row you-message">
+                    <div class="message-text"></div>
+                    <div class="name-display"></div>
+                </div> -->
+            </div>
+
+            <!-- Type a message -->
+            <div id="chat-form">
+                <button id="submit">SEND MESSAGE</button>
+                <input type="text" id = "chat" placeholder="Type your answer">
+            </div>
+        </div>
+    </body>
+</html>
