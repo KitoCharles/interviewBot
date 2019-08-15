@@ -23,7 +23,7 @@ const logoutForm = document.querySelector('#signOutBtn')
 
 
 
-
+auth.signOut()
 //sign in
  loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
