@@ -36,6 +36,7 @@ const logoutForm = document.querySelector('#signOutBtn')
       loginForm.querySelector('.error').innerHTML = " ";
     }).catch(err => {
       loginForm.querySelector('.error').innerHTML = err.message;
+      
     })
 
  });
@@ -56,9 +57,9 @@ const logoutForm = document.querySelector('#signOutBtn')
 
 //checks if user is logged in or not and does things accordingly
 firebase.auth().onAuthStateChanged(firebaseUser => {
-  if(firebaseUser){
+  if(firebaseUser){ 
       console.log("logged in")
-      //want this to go to profile homepage
+      window.location.replace("file:///C:\\Users\\Admin\\Desktop\\interviewBot-master\\interviewBot\\chatBot\\chatBot.html","mywindow");
   }else {
       console.log('not logged in')
   }
